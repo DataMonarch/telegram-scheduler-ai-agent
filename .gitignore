@@ -180,3 +180,8 @@ playwright*/
 *src/data/
 
 *.json
+
+*.session
+*.pickle
+
+config/
