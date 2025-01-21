@@ -1,0 +1,10 @@
+Manually WITHOUT GENERATION A CODE extract the times of availability of his_tag in **12-hour clock format** from the conversation and generate a JSON object containing arrays of the availability ranges in, separated by hyphensm as values, and week days as keys. Make sure no space between numbers and time formats like "am/pm" and "pm":
+
+Monday: [X:YYam/pm-X:YYam/pm, ...]
+Tuesday: [X:YYam/pm-X:YYam/pm, ...]
+Wednesday: [X:YYam/pm-X:YYam/pm, ...]
+Thursday: [X:YYam/pm-X:YYam/pm, ...]
+Friday: [X:YYam/pm-X:YYam/pm, ...]
+
+If there is no available time, then generate empty lists for those days. Extract only those time ranges that are mentioned in the conversation. 
+Conversation:

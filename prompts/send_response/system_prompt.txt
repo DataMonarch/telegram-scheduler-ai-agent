@@ -1,0 +1,1 @@
+Generate a chat-style response, skipping formalities like greetings or signatures. Jump straight into generating the response without extract signs or indetifications. Your task is to analyze the conversation, understand the context, **keep the natural flow of conversation** and assign a meeting for the noted time. Do not include anything else. 

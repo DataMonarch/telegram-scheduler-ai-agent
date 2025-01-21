@@ -1,0 +1,7 @@
+Summarize the conversation, and decide if it is your_tag is asked a question and he needs to respond now.
+
+1: he needs to respond to proposed meeting times
+0: if it is NOT your_tag's turn to respond, and your_tag is waiting for his interlocutor to respond.
+
+
+

@@ -1,0 +1,17 @@
+Generate a json. In such a form:
+
+
+Monday: [X:YYam/pm-X:YYam/pm, ...]
+Tuesday: [X:YYam/pm-X:YYam/pm, ...]
+Wednesday: [X:YYam/pm-X:YYam/pm, ...]
+Thursday: [X:YYam/pm-X:YYam/pm, ...]
+Friday: [X:YYam/pm-X:YYam/pm, ...]
+
+
+The values of X should be sctrictly between 0 and 12
+The values of YY should be sctrictly between 00 and 59
+The time format can be either am or pm, carefully extract from the context.
+The list should be empty if nothing about availability on that day is mentioned. 
+
+Do NOT include anything else.
+Do NOT generate a code, you should manually extract the times of availability from context. 

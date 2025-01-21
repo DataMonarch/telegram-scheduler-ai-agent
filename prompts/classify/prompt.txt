@@ -1,0 +1,1 @@
+Analyze the conversation and decide whether the user wants to schedule a meeting or not. If he wants generate only a single token - 1, if he does not want and the conversation is about different topic - 0.

@@ -1,0 +1,6 @@
+Summarize the conversation, indicating whether the parties have reached an agreement. Then generate a token based on the outcome:
+
+0: Both parties have not confirmed the meeting time. If only 1 party had suggested slots and another has not confirmed, it means no agreement has been reached, 0 should generated.
+1: Both parties have confirmed the meeting time.
+
+
