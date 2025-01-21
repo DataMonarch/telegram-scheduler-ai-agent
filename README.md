@@ -31,7 +31,7 @@ cd desktop-app
 Ensure you have Python 3.9 or higher installed. Install the required dependencies:
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 #### Integrating Ollama for Llama Models
@@ -62,13 +62,13 @@ After installing Ollama, download the desired Llama models:
 - **Llama 3.2 3B Model**:
 
   ```bash
-  ollama pull llama3.2:3b
+  uv run ollama pull llama3.2:3b
   ```
 
 - **Llama 3.1 8B Model**:
 
   ```bash
-  ollama pull llama3.1:8b
+  uv run ollama pull llama3.1:8b
   ```
 
 These commands will download the specified models to your local machine.
@@ -99,15 +99,7 @@ PyTesseract is a Python wrapper for Google's Tesseract-OCR Engine, enabling text
     sudo apt install tesseract-ocr
     ```
 
-##### 2. Install PyTesseract and Pillow
-
-Install the necessary Python packages:
-
-```bash
-pip install pytesseract pillow
-```
-
-##### 3. Configure Environment Variables (Windows Only)
+##### 2. Configure Environment Variables (Windows Only)
 
 Add Tesseract-OCR to your system's PATH:
 
@@ -166,7 +158,7 @@ To enable Google Calendar schedule extraction:
 After completing the setup, run the application using the following command:
 
 ```bash
-python -m src.main
+uv run python -m src.main
 ```
 
 This will start the AI Meeting Scheduler, and the AI will interact with it through your Telegram bot. The application will extract your current schedule from Google Calendar to identify suitable time slots for new meetings, and the AI will schedule meetings with your interlocutors if needed.
