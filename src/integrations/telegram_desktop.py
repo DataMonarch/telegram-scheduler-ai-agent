@@ -68,9 +68,6 @@ async def launch_telegram(chat_history, client_name):
         os.makedirs(screenshot_dir)
     screen_recorder_index = 0
 
-    # exe_path = r"C:\Program Files\WindowsApps\TelegramMessengerLLP.TelegramDesktop_5.10.3.0_x64__t4vj0pshhgkwm\Telegram.exe"
-    # subprocess.run([exe_path], check=True, capture_output=True, text=True)
-
     pyautogui.press("win")
     time.sleep(1)
     pyautogui.write("Telegram")
