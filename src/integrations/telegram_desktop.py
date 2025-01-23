@@ -60,7 +60,6 @@ logging.basicConfig(
 
 
 async def launch_telegram(chat_history, client_name):
-
     # try:
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     screenshot_dir = os.path.join("screenshots", "session_" + str(timestamp))
@@ -118,7 +117,7 @@ async def launch_telegram(chat_history, client_name):
             pyautogui.click((182, 101))
             pyautogui.hotkey("ctrl", "a")
             pyautogui.press("delete")
-        time.sleep(3)
+        time.sleep(5)
         custom_screen_shot_path = os.path.join(
             screenshot_dir, "screen_" + str(screen_recorder_index) + ".png"
         )
@@ -294,7 +293,10 @@ async def launch_telegram(chat_history, client_name):
                     f"Input prompt for response generation:\n{input_prompt_decline_full}"
                 )
                 decline_response = send_request_to_llm(
-                    input_prompt_decline_full, system_prompt_decline, temp=0.7, model="llama3.2:3b"
+                    input_prompt_decline_full,
+                    system_prompt_decline,
+                    temp=0.7,
+                    model="llama3.2:3b",
                 )
                 logging.info(f"LLM generated response:\n{decline_response}")
                 pyautogui.write(decline_response.replace("[Your Name]", ""))
@@ -328,7 +330,6 @@ async def launch_telegram(chat_history, client_name):
         logging.info("Clicked center of screen")
     pyautogui.hotkey("alt", "f4")
     logging.info("============ Closed Telegram window ============")
-
 
     # except Exception as e:
     #     print(f"Error: {e}")

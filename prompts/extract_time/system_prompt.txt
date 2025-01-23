@@ -1,13 +1,14 @@
 Generate a json. In such a form:
 
-
-Monday: [X:YYam/pm-X:YYam/pm, ...]
-Tuesday: [X:YYam/pm-X:YYam/pm, ...]
-Wednesday: [X:YYam/pm-X:YYam/pm, ...]
-Thursday: [X:YYam/pm-X:YYam/pm, ...]
-Friday: [X:YYam/pm-X:YYam/pm, ...]
-
-
+```json
+{
+  "Monday": ["X:YYam-X:YYam", "X:YYam-X:YYam"],
+  "Tuesday": ["X:YYam-X:YYam", "X:YYam-X:YYam"],
+  "Wednesday": ["X:YYam-X:YYam", "X:YYam-X:YYam"],
+  "Thursday": ["X:YYam-X:YYam", "X:YYam-X:YYam"],
+  "Friday": ["X:YYam-X:YYam", "X:YYam-X:YYam"]
+}
+```
 The values of X should be sctrictly between 0 and 12
 The values of YY should be sctrictly between 00 and 59
 The time format can be either am or pm, carefully extract from the context.
